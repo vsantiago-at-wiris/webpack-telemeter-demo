@@ -1,7 +1,8 @@
-import { Telemeter, Level } from "@wiris/telemeter-wasm"; // Replace [flavour] with `js` or `wasm`.
+import * as telemeter from "@wiris/telemeter-wasm";
 
+export default async function telemeterDemo() {
+    const Telemeter = (await telemeter).Telemeter;
 
-export default function telemeterDemo() {
     const solution = { name: "webpack-telemeter-demo", version: "1.0.0" };
     const hosts = [];
     const config = { test: true, debug: true, api_key: "00000000-0000-0000-000000000000" };
