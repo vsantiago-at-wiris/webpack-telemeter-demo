@@ -5,7 +5,7 @@ module.exports = {
   mode: 'development',
   entry: {
     index: './src/index.js',
-    print: './src/print.js',
+    print: './src/telemeter-demo.js',
   },
   plugins: [
     new HtmlWebpackPlugin({
